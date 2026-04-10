@@ -6,20 +6,20 @@
 
 const form = document.querySelector('form');
 
-function processarReserva(evento) {
-    evento.preventDefault();
+function enviarspam(e) {
+    e.preventDefault();
 
-    const inpNome = document.getElementById('nome');
-    const inpEmail = document.getElementById('email');
-    const spam = document.querySelector('input[type="checkbox"]');
+    const nome = document.getElementById('nome').value;
+    const email = document.getElementById('email').value;
+    const receber = document.querySelector('input[type="checkbox"]').checked;
 
-    
-    if (spam.checked && inpEmail.value === "") {
-        alert("Por favor, preencha seu e-mail para receber nossas novidades!");
-    } else {
-        alert("Obrigado, " + inpNome.value + "! Sua reserva foi enviada.");
-        form.reset();
+    if (receber && email === '') {
+        alert('Preencha o e-mail para receber novidades!');
+        return;
     }
+
+    alert('Obrigado, ' + nome + '! Sua reserva foi enviada.');
+    form.reset();
 }
 
-form.addEventListener('submit', processarReserva);
+form.addEventListener('submit', enviarspam);
