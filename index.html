@@ -8,7 +8,7 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="navbar">
         <h2 class="logo">Restaurante Vieira</h2>
 
         <ul class="navlinks">
@@ -20,95 +20,103 @@
       </nav>
     </header>
 
-
-    <section class="hero" id="inicio">
-      <div class="iniciotxt">
-        <h1>Bem-vindo ao restaurante <span>Vieira</span></h1>
-        <p>Aprofunde seu paladar para a culinária brasileira</p>
-      </div>
-
-      <div class="bthero">
-        <button class="btnprat">Ver pratos</button>
-        <button class="btnresv">Faça sua reserva</button>
-      </div>
-    </section>
-
-
-    <section class="melhpratos" id="pratos">
-      <h2>Melhores Pratos</h2>
-
-      <div class="pratcontainer">
-        <div class="prato">
-          <img src="fotos/feijoada.jpg" alt="Prato com feijoada acompanhada de arroz, alface e farofa.">
-        
-          <h3>Feijoada</h3>
-          <p>Feita com feijão preto cozido e diversas carnes de porco.</p>
-          <button class="btnresv">Faça seu pedido</button>
+    <main>
+      <section class="hero" id="inicio">
+        <div>
+          <div class="herotxt">
+            <h2>Bem-vindo ao</h2>
+            <h1>Restaurante Vieira</h1>
+            <p>Aprofunde seu paladar para a culinária brasileira</p>
+            </div>
+            
+          <div class="herobtn">
+            <button class="btnprat">Ver pratos</button>
+            <button class="btnresv">Faça sua reserva</button>
+          </div>
         </div>
 
-        <div class="prato">
-          <img src="fotos/acaraje.jpg" alt="Tábua de acarajé acompahado de molho">
+        <div class="heroimg">
+          <img src="fotos/bannerestaurante.jpg" alt="Banner do Restaurante Vieira">
+        </div>
+      </section>
 
-          <h3>Acarajé</h3>
-          <p>Feito com massa de feijão-de-corda, cebola e sal, frito em azeite de dendê.</p>
-          <button class="btnresv">Faça seu pedido</button>
+
+      <section class="melhorprat" id="pratos">
+        <h2>Melhores Pratos</h2>
+
+        <div class="pratcontainer">
+          <div class="prato">
+            <img src="fotos/feijoada.jpg" alt="Prato com feijoada acompanhada de arroz, alface e farofa.">
+          
+            <h3>Feijoada</h3>
+            <p>Feita com feijão preto cozido e diversas carnes de porco.</p>
+            <button class="btnresv">Faça seu pedido</button>
+          </div>
+
+          <div class="prato">
+            <img src="fotos/acaraje.jpg" alt="Tábua de acarajé acompahado de molho">
+
+            <h3>Acarajé</h3>
+            <p>Feito com massa de feijão-de-corda, cebola e sal, frito em azeite de dendê.</p>
+            <button class="btnresv">Faça seu pedido</button>
+          </div>
+
+          <div class="prato">
+            <img src="fotos/strogonoffrango.jpg" alt="Prato com strogonoff de frango acompanhado de arroz branco e batata palha.">
+
+            <h3>Strogonoff de Frango</h3>
+            <p>Feito com carne de frango desfiada e temperada, servida sobre arroz branco e batata palha.</p>
+            <button class="btnresv">Faça seu pedido</button>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="sobrenos" id="sobre">
+        <div class="sobreimg">
+          <img src="fotos/comidabrasilieira.jpg" alt="imagem ilustrativa da culinária brasileira">
         </div>
 
-        <div class="prato">
-          <img src="fotos/strogonoffrango.jpg" alt="Prato com strogonoff de frango acompanhado de arroz branco e batata palha.">
-
-          <h3>Strogonoff de Frango</h3>
-          <p>Feito com carne de frango desfiada e temperada, servida sobre arroz branco e batata palha.</p>
-          <button class="btnresv">Faça seu pedido</button>
+        <div class="sobretxt">
+          <h2>Sobre nós</h2>
+          <p>Bem-vindo ao nosso restaurante! Somos especialistas em culinária brasileira,
+            trazendo para você os sabores autênticos do Brasil.</p>
         </div>
-      </div>
-    </section>
+      </section>
 
 
-    <section class="sobrenos" id="sobre">
-      <div class="sobreimg">
-        <img src="fotos/comidabrasilieira.jpg" alt="imagem ilustrativa da culinária brasileira">
-      </div>
+      <section class="reserva" id="reserve">
+        <h2>Faça sua reserva!</h2>
 
-      <div class="sobretxt">
-        <h2>Sobre nós</h2>
-        <p>Bem-vindo ao nosso restaurante! Somos especialistas em culinária brasileira,
-          trazendo para você os sabores autênticos do Brasil.</p>
-      </div>
-    </section>
+        <div class="formresv">
+          <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
 
+            <!-- colocar validação para email com JS caso
+            o usuário quiser receber spam -->
+            <label for="email">Email:</label>
+            <input type="email" id="email">
 
-    <section class="reserva">
-      <h2>Faça sua reserva!</h2>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" required>
 
-      <div class="formresv">
-        <form>
-          <label for="nome">Nome:</label>
-          <input type="text" id="nome" required>
+            <label for="data">Data da Reserva:</label>
+            <input type="date" id="data" required>
 
-          <!-- colocar validação para email com JS caso
-          o usuário quiser receber spam -->
-          <label for="email">Email:</label>
-          <input type="email" id="email">
+            <label>
+              <input type="checkbox">
+              Concordo em receber informações sobre promoções e novidades pelo Email.
+            </label>
 
-          <label for="telefone">Telefone:</label>
-          <input type="tel" id="telefone" required>
-
-          <label for="data">Data da Reserva:</label>
-          <input type="date" id="data" required>
-
-          <label>
-            <input type="checkbox">
-            Concordo em receber informações sobre promoções e novidades pelo Email.
-          </label>
-
-          <!-- 
-          Colocar confirmação do envio por JS
-          -->
-          <button type="submit">Fazer reserva</button>
-        </form>
-      </div>
-    </section>
+            <!-- 
+            Colocar confirmação do envio por JS
+            -->
+            <button type="submit">Fazer reserva</button>
+          </form>
+        </div>
+      </section>
+    </main>
 
 
     <footer>
@@ -127,5 +135,7 @@
         <p>contato@gmail.com</p>
       </div>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
