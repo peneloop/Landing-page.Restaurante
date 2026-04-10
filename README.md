@@ -1,2 +1,3 @@
-# Landing-page.Restaurante
-Landing page de um restaurante vegano ficticio para a prática de html, css e javascript puro.
+## 🍽️ Landing page de restaurante brasileira (em andamento)
+
+Landing page de um restaurante fictício de comidas típicas brasileiras para treinar HTML, CSS e JavaScript.
