@@ -3,39 +3,129 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vieira</title>
+    <title> Restaurante Vieira</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
       <nav>
-        <h2 class="logo">Vieira</h2>
+        <h2 class="logo">Restaurante Vieira</h2>
 
         <ul class="navlinks">
           <li><a href="#inicio">Início</a></li>
           <li><a href="#pratos">Pratos</a></li>
-          <li><a href="#sobre">Sobre nós</a></li>
-          <li><a href="#contato">Contato</a></li>
           <li><a href="#reserve">Reserve</a></li>
+          <li><a href="#sobre">Sobre nós</a></li>
         </ul>
       </nav>
     </header>
 
+
     <section class="hero" id="inicio">
       <div class="iniciotxt">
         <h1>Bem-vindo ao restaurante <span>Vieira</span></h1>
-        <p>Descubra o sabor de pratos veganos ao estilo brasileiro</p>
+        <p>Aprofunde seu paladar para a culinária brasileira</p>
+      </div>
+
+      <div class="bthero">
+        <button class="btnprat">Ver pratos</button>
+        <button class="btnresv">Faça sua reserva</button>
       </div>
     </section>
 
-    <section></section>
 
-    <section></section>
+    <section class="melhpratos" id="pratos">
+      <h2>Melhores Pratos</h2>
 
-    <section></section>
+      <div class="pratcontainer">
+        <div class="prato">
+          <img src="fotos/feijoada.jpg" alt="Prato com feijoada acompanhada de arroz, alface e farofa.">
+        
+          <h3>Feijoada</h3>
+          <p>Feita com feijão preto cozido e diversas carnes de porco.</p>
+          <button class="btnresv">Faça seu pedido</button>
+        </div>
 
-    <section></section>
+        <div class="prato">
+          <img src="fotos/acaraje.jpg" alt="Tábua de acarajé acompahado de molho">
 
-    <footer></footer>
+          <h3>Acarajé</h3>
+          <p>Feito com massa de feijão-de-corda, cebola e sal, frito em azeite de dendê.</p>
+          <button class="btnresv">Faça seu pedido</button>
+        </div>
+
+        <div class="prato">
+          <img src="fotos/strogonoffrango.jpg" alt="Prato com strogonoff de frango acompanhado de arroz branco e batata palha.">
+
+          <h3>Strogonoff de Frango</h3>
+          <p>Feito com carne de frango desfiada e temperada, servida sobre arroz branco e batata palha.</p>
+          <button class="btnresv">Faça seu pedido</button>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="sobrenos" id="sobre">
+      <div class="sobreimg">
+        <img src="fotos/comidabrasilieira.jpg" alt="imagem ilustrativa da culinária brasileira">
+      </div>
+
+      <div class="sobretxt">
+        <h2>Sobre nós</h2>
+        <p>Bem-vindo ao nosso restaurante! Somos especialistas em culinária brasileira,
+          trazendo para você os sabores autênticos do Brasil.</p>
+      </div>
+    </section>
+
+
+    <section class="reserva">
+      <h2>Faça sua reserva!</h2>
+
+      <div class="formresv">
+        <form>
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" required>
+
+          <!-- colocar validação para email com JS caso
+          o usuário quiser receber spam -->
+          <label for="email">Email:</label>
+          <input type="email" id="email">
+
+          <label for="telefone">Telefone:</label>
+          <input type="tel" id="telefone" required>
+
+          <label for="data">Data da Reserva:</label>
+          <input type="date" id="data" required>
+
+          <label>
+            <input type="checkbox">
+            Concordo em receber informações sobre promoções e novidades pelo Email.
+          </label>
+
+          <!-- 
+          Colocar confirmação do envio por JS
+          -->
+          <button type="submit">Fazer reserva</button>
+        </form>
+      </div>
+    </section>
+
+
+    <footer>
+      <div  class="local">
+        <p>Fortaleza</p>
+        <p>Ceará</p>
+      </div>
+
+      <div class="rest">
+        <p>Restaurante</p>
+        <p>Vieira</p>
+      </div>
+
+      <div class="contat">
+        <p>(85) 99999-9999</p>
+        <p>contato@gmail.com</p>
+      </div>
+    </footer>
   </body>
 </html>
