@@ -1,200 +1,152 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Penélope Vieira</title>
-
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Restaurante Vieira</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <nav>
-            <a href="/" class="logo">Portfolio</a>
-            
-            <ul class="nav-links">
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#sobre">Sobre mim</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contatos</a></li>
-            </ul>
-        </nav>
+      <nav class="navbar">
+        <h2 class="logo">Restaurante Vieira</h2>
+
+        <ul class="navlinks">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#pratos">Pratos</a></li>
+          <li><a href="#sobre">Sobre nós</a></li>
+          <li><a href="#reserve">Reserve</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <section class="inicio" id="inicio">
-            <div class="apresentacao">
-                <div class="apresentxt">
-                    <span>Olá! Eu sou a</span>
-                    <h1>Penélope Vieira</h1>
-                    <p>Desenvolvedora front-end</p>
-                </div>
-
-                <div class="apresentbtn">
-                    <a href="#projetos" class="btn projebtn">Ver Projetos</a>
-                    <a href="#contato" class="btn contatobtn">Entre em Contato</a>
-                </div>                                               
+      <section class="hero" id="inicio">
+        <div>
+          <div class="herotxt">
+            <h2>Bem-vindo ao</h2>
+            <h1>Restaurante Vieira</h1>
+            <p>Aprofunde seu paladar para a culinária brasileira</p>
             </div>
-        </section>
-
-        <section class="sobre" id="sobre">
-            <div class="sobreimg">
-                <img src="assets/penelope.jpeg" alt="Penélope Vieira">
-            </div>
-
-            <div class="sobretxt">
-                <h2>Sobre mim</h2>
-                <p>
-                    Profissional em formação com curso técnico em Redes de Computadores,
-                    voltado ao desenvolvimento Front-End e com o objetivo de evoluir para o desenvolvimento Full-Stack.
-                    Possuo conhecimento prático em HTML, CSS e JavaScript, onde apliquei na construção de interfaces interativas e responsivas, em conjunto
-                    da utilição de IA para o auxílio no desenvolvimento.
-                    Durante o curso, tive experiência com Python para lógica de programação e MySQL para a modelagem e
-                    manipulação de bancos de dados.
-                </p>
-            </div>
-
-            <div class="sobrehabs">
-                <h2>Minhas habilidades e tecnologias!</h2>
-
-                <div class="habconteiner">
-                    <img src="assets/html.svg" alt="HTML">
-                    <img src="assets/css.svg" alt="CSS">
-                    <img src="assets/javascript.svg" alt="JavaScript">
-                    <img src="assets/git.svg" alt="Git">
-                    <img src="assets/github.svg" alt="github">
-                    <img src="assets/figma.svg" alt="figma">
-                </div>
-            </div>
-
-            <div class="sobreexp">
-                <h2>Experiências</h2>
-
-                <div class="containerexp">
-                    <div class="anoexp">2025</div>
-
-                    <div class="txtexp">
-                        <h3>Subgerente da Equipe de Software</h3>
-                        <span>Projeto Acadêmico New Eva</span>
-                        
-                        <p>
-                            Auxilei no planejamento de atividades e distribuição de funções para melhor rendimento da
-                            equipe, em conjunto da organização e utilização da metodologia Kanban.
-                        </p>
-
-                        <p>
-                            Contribui para o desenvolvimento front-end utilizando HTML e CSS na criação da interface visual para o Sistema de Inventário, 
-                            projeto criado em conjunto da equipe com o intuito de melhorar a organização dos componentes de hardware presentes na escola.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="projetos" id="projetos">
-            <h2>Meus Projetos</h2>
             
-            <div class="projetoscontainer">
+          <div class="herobtn">
+            <button class="btnprat">Ver pratos</button>
+            <button class="btnresv">Faça sua reserva</button>
+          </div>
+        </div>
 
-                <!-- CARD 1 -->
-                <div class="card">
-                    <img src="https://picsum.photos/400/200" alt="Projeto">
+        <div class="heroimg">
+          <img src="fotos/bannerestaurante.jpg" alt="Banner do Restaurante Vieira">
+        </div>
+      </section>
 
-                    <div class="card-content">
-                        <h3>Chat App</h3>
-                        <p>Lorem ipsum dolor sit amet.</p>
 
-                        <div class="tags">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JS</span>
-                        </div>
+      <section class="melhorprat" id="pratos">
+        <h2>Melhores Pratos</h2>
 
-                        <div class="actions">
-                            <a>
-                                <button>Saiba mais</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+        <div class="pratcontainer">
+          <div class="prato">
+            <img src="fotos/feijoada.jpg" alt="Prato com feijoada acompanhada de arroz, alface e farofa.">
+          
+            <h3>Feijoada</h3>
+            <p>Feita com feijão preto cozido e diversas carnes de porco.</p>
+            <button class="btnresv">Faça seu pedido</button>
+          </div>
 
-                <!-- CARD 2 -->
-                <div class="card">
-                    <img src="https://picsum.photos/400/200" alt="Projeto">
+          <div class="prato">
+            <img src="fotos/acaraje.jpg" alt="Tábua de acarajé acompahado de molho">
 
-                    <div class="card-content">
-                        <h3>Chat App</h3>
-                        <p>Lorem ipsum dolor sit amet.</p>
+            <h3>Acarajé</h3>
+            <p>Feito com massa de feijão-de-corda, cebola e sal, frito em azeite de dendê.</p>
+            <button class="btnresv">Faça seu pedido</button>
+          </div>
 
-                        <div class="tags">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JS</span>
-                        </div>
+          <div class="prato">
+            <img src="fotos/strogonoffrango.jpg" alt="Prato com strogonoff de frango acompanhado de arroz branco e batata palha.">
 
-                        <div class="actions">
-                            <button>Saiba mais</button>
-                            <div class="icons">
-                                <span></span>
-                                <span></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <h3>Strogonoff de Frango</h3>
+            <p>Feito com carne de frango desfiada e temperada, servida sobre arroz branco e batata palha.</p>
+            <button class="btnresv">Faça seu pedido</button>
+          </div>
+        </div>
+      </section>
 
-                <!-- CARD 3 -->
-                <div class="card">
-                    <img src="https://picsum.photos/400/200" alt="Projeto">
 
-                    <div class="card-content">
-                        <h3>Chat App</h3>
-                        <p>Lorem ipsum dolor sit amet.</p>
+      <section class="sobrenos" id="sobre">
+        <div class="sobreimg">
+          <img src="fotos/comidabrasilieira.jpg" alt="imagem ilustrativa da culinária brasileira">
+        </div>
 
-                        <div class="tags">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JS</span>
-                        </div>
+        <div class="sobretxt">
+          <h2>Sobre nós</h2>
+          <p>Bem-vindo ao nosso restaurante! Somos especialistas em culinária brasileira,
+            trazendo para você os sabores autênticos do Brasil.</p>
+        </div>
+      </section>
 
-                        <div class="actions">
-                            <button>Saiba mais</button>
-                            <div class="icons">
-                                <span></span>
-                                <span></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-            </div>
-        </section>
+      <section class="reserva" id="reserve">
+        <h2>Faça sua reserva!</h2>
 
-        <section class="contato" id="contato">
-            <h2>Entre em Contato</h2>
+        <div class="formresv">
+          <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
 
-            <div class="info">
-                <p>📞 (85) 99225-2181 (Whatsapp)</p>
-                <p>✉️ vieirapenelope21@gmail.com</p>
-            </div>
+            <!-- colocar validação para email com JS caso
+            o usuário quiser receber spam -->
+            <label for="email">Email:</label>
+            <input type="email" id="email">
 
-            <div class="redes">
-                <p>Redes Sociais</p>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" required>
 
-                <a href="https://www.linkedin.com/in/penelope-vieira/" target="_blank">
-                    <img src="assets/linkedin.svg" alt="linkedin">
-                </a>
+            <label for="data">Data da Reserva:</label>
+            <input type="date" id="data" required>
 
-                <a href="https://github.com/peneloop" target="_blank">
-                    <img src="assets/github.svg" alt="github">
-                </a>
-            </div>
-        </section>
+            <label>
+              <input type="checkbox">
+              Concordo em receber informações sobre promoções e novidades pelo Email.
+            </label>
+
+            <!-- 
+            Colocar confirmação do envio por JS
+            -->
+            <button type="submit">Fazer reserva</button>
+          </form>
+        </div>
+      </section>
     </main>
 
+
     <footer>
-        <p>&copy; 2026 Penélope Vieira. Todos os direitos reservados.</p>
+      <div  class="local">
+        <p>Fortaleza</p>
+        <p>Ceará</p>
+      </div>
+
+      <div class="rest">
+        <p>Restaurante</p>
+        <p>Vieira</p>
+      </div>
+
+      <div class="contat">
+        <p>(85) 99999-9999</p>
+        <p>contato@gmail.com</p>
+      </div>
     </footer>
 
+    <!-- Botão Voltar ao Topo -->
+    <button class="scroll-top" aria-label="Voltar ao topo">↑</button>
+
+    <!-- Modal de Confirmação -->
+    <div class="modal-overlay">
+      <div class="modal">
+        <h3>🎉 Reserva Confirmada!</h3>
+        <p></p>
+        <button class="modal-close">Fechar</button>
+      </div>
+    </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
